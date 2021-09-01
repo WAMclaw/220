@@ -1,6 +1,5 @@
 """
 William McClain
-CSCI 220-02
 Started: 8/31/21
 Last Uped: 9/1/21
 Problem: Create a code that prints 'hello, world!' and passes the hello_test
