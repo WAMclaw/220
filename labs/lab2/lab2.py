@@ -1,4 +1,56 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: William McClain
+lab2.py
+Problem: create code that
 """
+import math
+
+
+def sum_of_threes():
+    sot = eval(input("Please give an upper bound: "))
+    var = 0
+    for i in range(3,sot+1,3):
+        var = var + i
+    print("The sum of the threes is ", var)
+
+
+
+def multiplication_table():
+    multab = 1
+
+    for i in range(1,11):
+        for x in range(multab,multab*10+1,multab):
+            print(x, end=" ")
+
+
+
+def triangle_area():
+    sidea = eval(input("Please input the first side: "))
+    sideb = eval(input("Please input the second side: "))
+    sidec = eval(input("Please input the third side: "))
+
+    S = (sidea+sideb+sidec)/2
+    Area = math.sqrt(S*(S-sidea)*(S-sideb)*(S-sidec))
+    print("The area of the triangle is [",Area,"] units squared.")
+
+def sumSquares():
+    lowerb = eval(input("Enter a lower bound:"))
+    upperb = eval(input("Enter an upper bound: "))
+    pwr = 0
+    pwrsum = 0
+    for add in range(lowerb,upperb+1):
+        pwr = add ** 2
+        #print(pwr)
+        pwrsum = pwr + pwr
+        #print(pwrsum)
+
+    print("The sum of your squares is ",pwrsum)
+
+
+
+def power():
+    basep = eval(input("Enter a base: "))
+    pwrp = eval(input("Enter an exponent: "))
+    for tim in range(pwrp):
+        fin = basep*basep
+print(basep," ^ ",pwrp," = ",fin)
