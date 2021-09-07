@@ -7,11 +7,11 @@ import math
 
 
 def sum_of_threes():
-    sot = eval(input("Please give an upper bound: "))
-    var = 0
-    for i in range(3,sot+1,3):
-        var = var + i
-    print("The sum of the threes is ", var)
+    bound_sot = eval(input("Please give an upper bound: "))
+    variable_of_three = 0
+    for in_three in range(3,bound_sot+1,3):
+        var_of_three = variable_of_three + in_three
+    print("The sum of the threes is ", variable_of_three)
 
 
 
