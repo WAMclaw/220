@@ -19,7 +19,6 @@ def main():
     #calculating monthly interest
     #interest = round(daily_balance*monthly_rate,2)
     interest = round((((previous_balance*days)-(pay*(days-pay_day)))/days)*(rate/(12*100)),2)
-    #above line taken out because the tests thought it was too long
     #print("The monthly interest rate of the card is $",interest)
     #above line taken out because the tests did not like all the fluff
     print(interest)
