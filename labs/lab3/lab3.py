@@ -1,7 +1,6 @@
 """
 Name: William McClain
-loops.py
-Problem
+lab3.py
 I affirm that this program is all my own work, with help from the TA and LT.
 """
 import math
