@@ -133,19 +133,20 @@ def color_shape():
     win.close()
 
 def process_string():
-    string = eval(input("Give a string: "))
-    first = string[1]
+    string = str(input("Give a string: "))
+    first = string[0]
     last = string[-1]
-    throu_25 = string[2:6]
-
+    throu_25 = string[1:5]
+    con = str(first) + str(last)
 
     length = len(string)
 
     print(first)
     print(last)
     print(throu_25)
+    print(con)
 
-    for i in range(length-1)
+    for i in range(length-1):
         print(string[i])
     print(length)
 
@@ -174,7 +175,7 @@ def process_list():
 def another_series():
     n = eval(input("Enter the number of terms to be added: "))
     vals = [2, 4, 6]
-    ph = 1
+    ph = 0
     for i in range(n):
 
 
@@ -182,8 +183,8 @@ def main():
     # target()
     # triangle()
     # color_shape()
-    # process_string()
-    process_list()
+    process_string()
+    # process_list()
     pass
 
 
