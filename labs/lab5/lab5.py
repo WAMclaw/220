@@ -138,14 +138,14 @@ def process_string():
     last = string[-1]
     throu_25 = string[1:5]
     con = str(first) + str(last)
-
+    rep3 = string[0:2] * 10
     length = len(string)
 
     print(first)
     print(last)
     print(throu_25)
     print(con)
-
+    print(rep3)
     for i in range(length-1):
         print(string[i])
     print(length)
@@ -174,17 +174,22 @@ def process_list():
 
 def another_series():
     n = eval(input("Enter the number of terms to be added: "))
-    vals = [2, 4, 6]
+    vals = [6, 4, 2]
     ph = 0
+    x = 3
     for i in range(n):
+        x = x + 2
+        ph = x%3
 
+        print(ph)
 
 def main():
     # target()
     # triangle()
     # color_shape()
-    process_string()
+    # process_string()
     # process_list()
+    another_series()
     pass
 
 
