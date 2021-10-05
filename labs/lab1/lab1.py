@@ -27,7 +27,6 @@ def shooting_percentage():
     percshot = madeshots / totshots
     print("Your shot percentage is [",percshot,"]")
 
-
 def coffee():
     lbscoff = eval(input("Enter the amount [in pounds] of coffee you would like to order: "))
     shplb = 0.86

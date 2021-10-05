@@ -1,11 +1,15 @@
 """
 William McClain
 interest.py
+
 Problem: Create a code that calculates the monthly interest of a User
+
 I affirm that the contents of this code are my completely my own creation.
 """
 
 def main():
+    #Print what the program does
+    print("This will calculate the monthly interest for a single year.")
     #Asking for user input and assigning variables to each
     rate = eval(input("Please input the annual interest rate here: "))
     days = eval(input("Please input the number of days in this billing cycle here: "))
@@ -23,5 +27,5 @@ def main():
     #above line taken out because the tests did not like all the fluff
     print(interest)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -159,7 +159,6 @@ def circle():
 def pi2():
     print("This will approximate pi if given a number of sums in the sequence,")
     print("[4/1 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + ...]")
-    print()
 
     app_amount = eval(input("Give [n] number of terms in the series: "))
     numer = (-4)

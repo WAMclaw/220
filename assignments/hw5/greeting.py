@@ -2,7 +2,8 @@
 William McClain
 greeting.py
 
-Problem:
+Problem: create a greeting card that says Happy Valentines day. Add a little spice to it
+with an arrow flying through the heart. Add some more spice.
 Affirmation: I affirm that the following code is all my own work.
 """
 from graphics import GraphWin, Point, Circle, Polygon, Text, color_rgb, time

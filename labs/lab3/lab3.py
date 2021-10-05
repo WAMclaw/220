@@ -29,6 +29,7 @@ def tip_jar():
 
 #takes the input of a number and approximate and inputs them into a function to
 #approximate the square root of the number
+# done wrong needed fix
 def newton():
     print("This code will use Sir Issac Newton's method to approximate a square root.")
     new_number = eval(input("Give a number:"))
@@ -36,6 +37,9 @@ def newton():
     approx = (approx + (new_number/approx))/2
     print("The number: ",new_number)
     print("The approximate square root: ", approx)
+
+    # fix
+
 
 # create a function that prints a sequence following the 1,3,3,5,5,7,7,... pattern
 def sequence():

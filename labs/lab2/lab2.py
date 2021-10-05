@@ -8,7 +8,7 @@ import math
 
 
 def sum_of_threes():
-    bound_sot = eval(input("Please give an upper bound: "))
+    bound_sot = eval(input("Please give an upper bound: ")) #upper_bound
     variable_of_three = 0
     for in_three in range(3,bound_sot+1,3):
         variable_of_three = variable_of_three + in_three
@@ -17,11 +17,12 @@ def sum_of_threes():
 
 
 def multiplication_table():
-    multab = 1
+   # multab = 0
 
-    for i in range(1,11):
-        for x in range(multab,multab*10+1,multab):
-            print(x, end=" ")
+    #for i in range(1,11):
+        #multab=multab+i
+        #for x in range(multab,multab*10+1,multab):
+            #print(x, end=" ")
 
 
 
@@ -39,7 +40,7 @@ def sumSquares():
     upperb = eval(input("Enter an upper bound: "))
     pwr = 0
     for add in range(lowerb,upperb+1):
-        pwr = add ** 2
+        pwr = pwr + add**2 #fixed
         #print(pwr)
 
         #print(pwrsum)
@@ -51,6 +52,7 @@ def sumSquares():
 def power():
     basep = eval(input("Enter a base: "))
     pwrp = eval(input("Enter an exponent: "))
+    fin = 1 #fixed
     for tim in range(pwrp):
-        fin = basep*basep
+        fin = fin + basep*basep
 print(basep," ^ ",pwrp," = ",fin)
