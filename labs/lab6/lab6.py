@@ -109,14 +109,13 @@ def pig_latin():
 
 
 def main():
-    #name_reverse()
-    #company_name()
-    #initials()
-    #names()
+    name_reverse()
+    company_name()
+    initials()
+    names()
     thirds()
-    #word_average()
-    #pig_latin()
-    # add other function calls here
+    word_average()
+    pig_latin()
 
 
 main()
