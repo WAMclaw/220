@@ -85,7 +85,7 @@ def encode_better():
 def main():
     # add function calls here
     # cash_conversion()
-    encode()
+    # encode()
     # sphere_area(3)  # should give area of 113.0973
     # sphere_volume(3)  # should give volume of 113.0973
     # sum_n(35)  # should give sum of 630
