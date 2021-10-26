@@ -1,0 +1,2 @@
+Lucky Peyton Davidson's average: Error: The weights are more than 100
+Briana Flaherty's average: 62.0
