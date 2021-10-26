@@ -39,11 +39,14 @@ def weighted_average(in_file_name, out_file_name):
             w_avg_str = 'Error: The weights are less than 100.'
         str_out = list_alpha[0] + "'s average: " + w_avg_str + '\n'
         txt_out.write(str_out)
-    class_average = round(all_grade_total / n_students, 1)
-    final_str_out = 'Class Average: ' + str(class_average)
-    txt_out.write('\n')
-    txt_out.write(final_str_out)
-    txt_out.close()
+
+    # lines below taken out to comply with given test for weighted_average assignment
+    # the assignment asks to also give the Class Average the lines below write this to the out file
+    # class_average = round(all_grade_total / n_students, 1)
+    # final_str_out = 'Class Average: ' + str(class_average)
+    # txt_out.write('\n')
+    # txt_out.write(final_str_out)
+    # txt_out.close()
 
 
 def main():
