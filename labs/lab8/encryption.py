@@ -37,7 +37,7 @@ def encode_better(text_in, key_in):
     key_list[:0] = key_in
     i = 0
     n = len(key_list)
-
+    encoded_message = ''
     for val in text_list:
         num = ord(val)
         knum = ord(key_list[((i + n) % n)])
@@ -45,5 +45,6 @@ def encode_better(text_in, key_in):
         num = num + num_shift
         new_ch = chr(num)
         text_list[i] = new_ch
-        print(text_list[i], end='')
         i = i + 1
+        encoded_message = encoded_message + new_ch
+    return encoded_message

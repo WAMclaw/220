@@ -108,40 +108,23 @@ def send_safe_message(file, friend, key):
 
 def send_uncrackable_message(file, friend, pad):
     in_txt = open(file, 'r')
-    in_key = open(pad, 'r')
+    in_pad = open(pad, 'r')
     out_txt = open(friend, 'w')
 
     fin_str = ''
+    fin_list = []
     for line in in_txt:
         a_line = line.strip('\n')
-    fin_str = fin_str + a_line
-    for key_line in in_key:
-        a_line = key_line.strip('\n')
-    key = a_line
+        a_list = a_line.rsplit()
+        fin_list = fin_list + a_list
+        for item in fin_list:
+            fin_str = fin_str + item
+    for pad_line in in_pad:
+        a_line = pad_line.strip('\n')
+        key = a_line
 
-    in_txt.close()
-    out_txt.close()
-    text_in = input('Enter a message to be encoded through a Vigenere cipher: ')
-    text_in.lower()
-    text_list = []
-    key_in = input('Enter a word/series of letter as the key for the cipher: ')
-    key_in.lower()
-    text_list[:0] = text_in
-    key_list = []
-    key_list[:0] = key_in
-    i = 0
-    n = len(key_list)
-    encoded_message = ""
-    for val in text_list:
-        num = ord(val)
-        knum = ord(key_list[((i + n) % n)])
-        num_shift = knum - 97
-        num = num + num_shift
-        new_ch = chr(num)
-        text_list[i] = new_ch
-        encoded_message = encoded_message + new_ch
-        i = i + 1
-
+    from encryption import encode_better
+    encoded_message = encode_better(fin_str, key)
     out_txt.write(encoded_message)
 
 
@@ -151,7 +134,7 @@ def main():
     # calc_check_sum('0072946520')
     # send_message('message.txt', 'bob.txt')
     # send_safe_message('secret_message.txt', 'encoded_msg.txt', 3)
-    # send_uncrackable_message('safest_message.txt', 'uncracked_msg.txt', 'pad.txt')
+    send_uncrackable_message('safest_message.txt', 'uncracked_msg.txt', 'pad.txt')
     pass
 
 
