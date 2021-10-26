@@ -1,7 +1,9 @@
 Lucky Peyton Davidson's average: 18.3
 Briana Flaherty's average: 62.0
 Billy Bother's average: 87.0
-Oh No's average: Error: The weights are less than 100
+Oh No's average: Error: The weights are less than 100.
 Hermione Heffalump's average: 95.4
-Too Bad's average: Error: The weights are more than 100
+Too Bad's average: Error: The weights are more than 100.
 Kurt The Kidd's average: 82.5
+
+Class Average: 69.0
