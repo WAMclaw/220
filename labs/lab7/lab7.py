@@ -90,7 +90,7 @@ def main():
     # sphere_volume(3)  # should give volume of 113.0973
     # sum_n(35)  # should give sum of 630
     # sum_n_cubes(35)  # should give sum of 396900
-    # encode_better()
+    encode_better()
 
     pass
 

@@ -4,7 +4,7 @@ lab8.py
 Problem:
 Affirmation: I affirm that everything in this code is my own work with the help of the TA and LT
 """
-
+from encryption import encode, encode_better
 
 def number_words(in_file_name, out_file_name):
     in_txt = open(in_file_name, 'r')
@@ -98,7 +98,6 @@ def send_safe_message(file, friend, key):
         a_line = key_line.strip('\n')
         key = a_line
 
-    from encryption import encode
     encoded_msg = encode(fin_str, key)
     out_txt.write(encoded_msg)
 
@@ -123,9 +122,11 @@ def send_uncrackable_message(file, friend, pad):
         a_line = pad_line.strip('\n')
         key = a_line
 
-    from encryption import encode_better
     encoded_message = encode_better(fin_str, key)
     out_txt.write(encoded_message)
+
+    in_txt.close()
+    out_txt.close()
 
 
 def main():

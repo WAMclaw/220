@@ -16,6 +16,8 @@ def encode(text_in, key):
         num = ord(val)
         num = num + key_in
         # these two if statements take the loop of the alphabet into account and if spaces are in the text
+
+        # possibly fix with a range mod dealio
         if num > 122:
             num = num - 26
         if num == key_in + 32:
@@ -48,3 +50,5 @@ def encode_better(text_in, key_in):
         i = i + 1
         encoded_message = encoded_message + new_ch
     return encoded_message
+
+
