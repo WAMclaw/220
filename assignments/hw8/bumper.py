@@ -1,7 +1,10 @@
 """
 William McClain
 bumper.py
-Problem:
+Problem: create 5 functions, one to find a random number, 3 to find if the balls collide,
+1 to create a random color. Add the functions to a main that creates a bumper car window
+and two bumper cars. Have the functions mentioned before in the main to move and bump
+the balls
 Affirmation: I affirm that all of this code is my own work.
 """
 from random import randint
