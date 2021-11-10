@@ -25,25 +25,28 @@ def ttt_board(into):
     print(bottom_left, inner_line, bottom_mid, inner_line, bottom_right)
 
 
-def move():
+def move(list_m):
     choice = ''
-    legal = is_legal(choice)
-    while len(choice) != 2 or choice[1] != 'o' and choice[1] != 'x' or not choice[0].isnumeric() or int(choice[0]) < 1:
+    legal = ''
+    while len(choice) != 2 or choice[1] != 'o' and choice[1] != 'x' or not choice[0].isnumeric() or int(choice[0]) < 1 and legal:
         choice = input('Enter your chosen placement [1-9] and character [X or O]:')
         choice = choice.lower()
+        legal = is_legal(choice, list_m)
     choice = choice.upper()
     return choice
 
-#def is_legal(choice):
-    #if
+
+def is_legal(choice, list_l):
+    return str(list_l[int(choice[0])]).isnumeric()
+
 
 #def is_won():
+
 
 def is_over(count, win):
     if count >= 9 or win:
         print('The game is over.')
         return True
-
 
 
 def main():
@@ -52,7 +55,7 @@ def main():
     ttt_board(listlow)
     over = False
     while not over:
-        choice = move()
+        choice = move(listlow)
         space = eval(choice[0]) - 1
         character = choice[1]
         listlow[space] = character

@@ -6,6 +6,7 @@ Affirmation: I affirm that everything in this code is my own work with the help 
 """
 from encryption import encode, encode_better
 
+
 def number_words(in_file_name, out_file_name):
     in_txt = open(in_file_name, 'r')
     out_txt = open(out_file_name, 'w')
@@ -135,7 +136,7 @@ def main():
     # calc_check_sum('0072946520')
     # send_message('message.txt', 'bob.txt')
     # send_safe_message('secret_message.txt', 'encoded_msg.txt', 3)
-    send_uncrackable_message('safest_message.txt', 'uncracked_msg.txt', 'pad.txt')
+    # send_uncrackable_message('safest_message.txt', 'uncracked_msg.txt', 'pad.txt')
     pass
 
 

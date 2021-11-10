@@ -72,6 +72,16 @@ def writeSumOfSquares():
         txt_sum = 'Sum of Squares = ' + str(sum_o_sqs) + '\n'
         txt_out.write(txt_sum)
 
+def beta_writeSumOfSquares():
+    file_in = input('Give a file [file.txt] containing at least two numbers\n'
+                    'per line to be squared and have their sums given: ')
+    txt_in = open(file_in, 'r')
+    txt_out = open('sum_out.txt', 'w')
+    for line in txt_in:
+        lista = line.rsplit()
+        # sumlist(squareEachAlpha(toNumbersAlpha(lista)))
+        txt_sum = 'Sum of Squares = ' + str(sumlist(squareEachAlpha(toNumbersAlpha(lista)))) + '\n'
+        txt_out.write(txt_sum)
 
 def starter():
     weight = eval(input('Enter the wrestlers weight: '))
@@ -157,6 +167,7 @@ def main():
     # print(sumlist(list))
     # toNumbers(strList)
     # writeSumOfSquares()
+    beta_writeSumOfSquares()
     # starter()
     # leapYear(year)
     # circleOverlap()
