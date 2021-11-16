@@ -10,6 +10,4 @@ Zeus
 Birb
 Platapeople
 Goose
-Goose Goose
-Goose Goose Goose
-Pizza Time
+Pizza

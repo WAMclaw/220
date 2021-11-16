@@ -63,12 +63,13 @@ def main():
     count = 7
     while count > 0:
         letter = input("Let's play hang man. Guess a letter: ").lower()
-        print(letter)
-        for num in range(game_word.count(letter)):
-            print(game_word.index(letter))
-            game_word = game_word.replace(letter,'1')
-            print(game_word)
-            print(hidden2)
+        # print(letter)
+        # for num in range(game_word.count(letter)):
+        #     print(game_word.index(letter))
+        #     game_word = game_word.replace(letter,'1')
+        #     print(game_word)
+        #     print(hidden2)
+        # code above is failed attempt at making the hangman game
         for item in hidden:
             if check_if_guessed(item) == True:
                 count = -1
