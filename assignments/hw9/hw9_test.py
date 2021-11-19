@@ -13,7 +13,7 @@ win = GraphWin("Three Door Game", 600, 600)
 class TestClass:
     def test_hw(self):
         builder = TestBuilder('button', 'button.py', 12)
-        builder.add_lint_test('three_door_game.py', 10)
+        builder.add_lint_test('ThreeDoorGame.py', 10)
         constructor_section, instance_vars_section, methods_section = build_sections()
         builder.add_items(constructor_section, instance_vars_section, methods_section)
         builder.run()
