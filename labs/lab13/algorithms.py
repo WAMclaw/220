@@ -46,20 +46,22 @@ def is_in_binary(search_value, values):
     return False
 
 
-# def selection_sort(values):
-#     unsort_index = 0
-#     new = []
-#     for item in range(len(values)):
-#         new.append(values.pop(values.index(min(values))))
-#     # values.pop(values.index(min(values)))
-#     print(new)
-#
-#     for item in range(len(values) - 1):
-#         mini = item
-#         for new in range(item + 1, len(values)):
-#             if values[new] < values[mini]:
-#                 mini = new
-#         tem =
+def selection_sort(values):
+    # unsort_index = 0
+    # new = []
+    # for item in range(len(values)):
+    #     new.append(values.pop(values.index(min(values))))
+    # # values.pop(values.index(min(values)))
+    # print(new)
+
+    for item in range(len(values) - 1):
+        mini = item
+        for new in range(item + 1, len(values)):
+            if values[new] < values[mini]:
+                mini = new
+        tem = values[item]
+        values[item] = values[mini]
+        values[mini] = tem
 
 
 def calc_area(rect):
@@ -70,8 +72,38 @@ def calc_area(rect):
     return diff_x * diff_y
 
 
-def main():
-    selection_sort([2,4,3,1])
+def rect_sort(list_rect):
+    area_list = []
+    for item in list_rect:
+        area_list.append(calc_area(item))
 
+    for item in range(len(area_list) - 1):
+        mini = item
+        for new in range(item + 1, len(area_list)):
+            if area_list[new] < area_list[mini]:
+                mini = new
+        tem = area_list[item]
+        area_list[item] = area_list[mini]
+        area_list[mini] = tem
+    return area_list
+
+
+
+def main():
+    pa1= Point(10, 11)
+    pa2= Point(20, 21)
+    pb1= Point(10, 31)
+    pb2= Point(40,41)
+    pc1= Point(10, 51)
+    pc2= Point(60, 61)
+    pd1= Point(10, 71)
+    pd2= Point(80, 81)
+    rect1 = Rectangle(pa1,pa2)
+    rect2 = Rectangle(pb1, pb2)
+    rect3 = Rectangle(pc1, pc2)
+    rect4 = Rectangle(pd1, pd2)
+    rect_list_a = [rect1, rect2, rect3, rect4]
+
+    print(rect_sort(rect_list_a))
 if __name__ == "__main__":
     main()
