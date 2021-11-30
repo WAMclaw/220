@@ -88,7 +88,7 @@ def rect_sort(list_rect):
     return area_list
 
 
-def main():
+#def main():
     # pa1= Point(10, 11)
     # pa2= Point(20, 21)
     # pb1= Point(10, 31)
