@@ -88,22 +88,22 @@ def rect_sort(list_rect):
     return area_list
 
 
-
 def main():
-    pa1= Point(10, 11)
-    pa2= Point(20, 21)
-    pb1= Point(10, 31)
-    pb2= Point(40,41)
-    pc1= Point(10, 51)
-    pc2= Point(60, 61)
-    pd1= Point(10, 71)
-    pd2= Point(80, 81)
-    rect1 = Rectangle(pa1,pa2)
-    rect2 = Rectangle(pb1, pb2)
-    rect3 = Rectangle(pc1, pc2)
-    rect4 = Rectangle(pd1, pd2)
-    rect_list_a = [rect1, rect2, rect3, rect4]
+    # pa1= Point(10, 11)
+    # pa2= Point(20, 21)
+    # pb1= Point(10, 31)
+    # pb2= Point(40,41)
+    # pc1= Point(10, 51)
+    # pc2= Point(60, 61)
+    # pd1= Point(10, 71)
+    # pd2= Point(80, 81)
+    # rect1 = Rectangle(pa1,pa2)
+    # rect2 = Rectangle(pb1, pb2)
+    # rect3 = Rectangle(pc1, pc2)
+    # rect4 = Rectangle(pd1, pd2)
+    # rect_list_a = [rect1, rect2, rect3, rect4]
+    # print(rect_sort(rect_list_a))
 
-    print(rect_sort(rect_list_a))
+
 if __name__ == "__main__":
     main()
