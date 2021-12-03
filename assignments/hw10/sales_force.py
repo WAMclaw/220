@@ -1,7 +1,7 @@
 """
 William McClain
 sales_force.py
-Problem:
+Problem: Create a class for the Sales Force of an organization
 Affirmation: I affirm that this is all my own work.
 """
 from sales_person import SalesPerson
